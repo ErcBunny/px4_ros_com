@@ -1,0 +1,85 @@
+start_point:                  [0.0, 0.0, 1.2]
+
+end_point:                    [5.5, 1.2, 1.2]
+
+(2.7, -0.3, 3); 
+(1.8, 1.2, 3); 
+(5.4, 0, 3); 
+(4.2, 1.8, 3); 
+(4.2, -1.8, 3); 
+(3.9, 0, 1.0); 
+
+<arg name="map_resolution" default="0.02"/>
+    <arg name="map_size_x"     default="8.0"/>
+    <arg name="map_size_y"     default="4.2"/>
+    <arg name="map_size_z"     default="1.8"/>
+
+sample_prob:                      0.9
+
+iter_num_max:                     1000000
+
+rrt_step:                         0.5
+
+max_reduce_dist:                  5
+
+mvc_res:                          20
+
+uav_size_x:                       1.1
+
+uav_size_y:                       1.1
+
+uav_size_z:                       0.35
+
+minco_resolution:                 3.0
+
+total_time:                       15
+
+rho:                              100.0
+
+vel_max:                          0.36
+
+acc_max:                          5.0
+
+angv_max:                         0.1
+
+velocity_penalty_weight:          10000.0
+
+acceleration_penalty_weight:      10000.0
+
+angular_velocity_penalty_weight:  10000.0
+
+collision_penalty_weight:         100000.0
+
+integral_resolution:              16
+
+lbfgs_mem_size:                   256
+
+lbfgs_g_epsilon:                  0.0
+
+lbfgs_delta:                      1.0e-7
+
+lbfgs_past:                       3
+
+lbfgs_max_iters:                  0
+
+lbfgs_max_ls:                     40
+
+lbfgs_ls_method:                  0
+
+lbfgs_min_step:                   0.0
+
+lbfgs_slope_coeff:                1.0e-5
+
+lbfgs_step_coeff:                 0.3
+
+lbfgs_wolfe_coeff:                0.9
+
+use_original_mesh:                true
+
+vis_sample_dt:                    1
+
+mesh_vis_scale_x:                 0.001
+
+mesh_vis_scale_y:                 0.001
+
+mesh_vis_scale_z:                 0.001
