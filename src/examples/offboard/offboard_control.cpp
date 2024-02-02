@@ -512,13 +512,13 @@ void OffboardControl::load_trajectory_from_file(std::fstream &file)
         }
         if(!dim_ok)
         {
-            std::cout << "Trajectory dimension mismatch." << std::endl;
-            std::cout << "Defaulting to figure of 8 trajectory." << std::endl;
+            std::cout << "Trajectory dimension mismatch. Exiting." << std::endl;
+            exit(1);
         }
         else if(!timestamp_ok)
         {
-            std::cout << "Timestamp error." << std::endl;
-            std::cout << "Defaulting to figure of 8 trajectory." << std::endl;
+            std::cout << "Timestamp error. Exiting." << std::endl;
+            exit(1);
         }
         else
         {
@@ -565,8 +565,8 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			std::cout << "Cannot open trajectory file." << std::endl;
-			std::cout << "Defaulting to figure of 8 trajectory." << std::endl;
+			std::cout << "Cannot open trajectory file. Exiting." << std::endl;
+            exit(1);
 		}
 	}
 
