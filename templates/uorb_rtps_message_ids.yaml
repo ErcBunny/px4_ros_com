@@ -322,6 +322,7 @@ rtps:
     msg: VehicleActuatorSetpoint
   - id: 147
     msg: ControlAllocatorStatus
+    send: true
   - id: 148
     msg: MagWorkerData
   - id: 149
