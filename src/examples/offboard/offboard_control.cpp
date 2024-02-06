@@ -491,8 +491,8 @@ void OffboardControl::load_trajectory_from_file(std::fstream &file)
     // check trajectory size
     if(trajectory_from_file_.empty())
     {
-        std::cout << "The file contains no waypoint." << std::endl;
-        std::cout << "Defaulting to figure of 8 trajectory." << std::endl;
+        std::cout << "The file contains no waypoint. Exiting." << std::endl;
+        exit(1);
     }
     else
     {
